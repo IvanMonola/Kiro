@@ -1,0 +1,3 @@
+git init && git add . && git commit -m "feat: kiro projects showcase"
+git remote add origin https://github.com/IvanMonola/kiro-projects-showcase.git
+git push -u origin main

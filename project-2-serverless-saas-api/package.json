@@ -1,0 +1,32 @@
+{
+  "name": "serverless-multitenant-saas-api",
+  "version": "1.0.0",
+  "description": "Multi-tenant SaaS API with Cognito, Stripe, and DynamoDB - Built with Kiro IDE",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --coverage",
+    "deploy": "cdk deploy --all",
+    "lint": "eslint src/ tests/"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cognito-identity-provider": "^3.600.0",
+    "@aws-sdk/client-dynamodb": "^3.600.0",
+    "@aws-sdk/client-ses": "^3.600.0",
+    "@aws-sdk/lib-dynamodb": "^3.600.0",
+    "stripe": "^15.0.0",
+    "zod": "^3.23.0",
+    "uuid": "^9.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "jwks-rsa": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.140",
+    "@types/jest": "^29.5.0",
+    "@types/jsonwebtoken": "^9.0.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.5.0",
+    "aws-cdk-lib": "^2.150.0"
+  },
+  "keywords": ["kiro", "saas", "multi-tenant", "serverless", "stripe", "cognito"]
+}
